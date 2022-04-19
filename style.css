@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.cart-list{
+    position: relative;
+}
+.remove-list{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(10, 10, 10, 0.1);
+}
+.remove-list button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #ff4040;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+.cart-list:hover .remove-list{
+    display: flex;
+}
+.d-none{
+    display: none !important;
+}
+.list-group-item{
+    display: flex !;
+    width: 100%;
+    justify-content: space-between;
+}
+.reveal-anim{
+    animation: scrolRevial 2s;
+    visibility: hidden;
+}
+@keyframes scrolRevial {
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
